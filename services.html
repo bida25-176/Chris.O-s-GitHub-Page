@@ -4,22 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
+        <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
 </head>
 <body>
     <header>
-        <h1>Squeaky Clean Carwash</h1>
-        <h1>Services</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="services.html">Services</a>|
+            <h1>Squeaky Clean Carwash</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                            <li class="nav-item">
+                           <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="services.html">Services</a>
+                        </li>         
+                        <li class="nav-item">
+                           <a class="nav-link" href="bookings.html">Bookings</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact</a>
+                        </li> 
+              </div>
+       </nav>
+    </header>
+        <main class="container my-5">
+             <h2>We are Dedicated to Providing Our Best Services to YOU!</h2>
+            <!-- Service Selection -->
+        <h3>Select Service</h3>
+
+        <input type="radio" id="basic" name="service" value="basic" required>
+        <label for="basic"><h4>Full Wash</h4></label><br>
+
+        <input type="radio" id="standard" name="service" value="standard">
+        <label for="standard"><h4>Interior Wash Only</h4></label><br>
+
+        <input type="radio" id="premium" name="service" value="premium">
+        <label for="premium"><h4>Premium Wash</h4></label><br><br>
+
+          <!-- Expandable Add-ons -->
+        <details>
+            <summary><strong><h3>Add-ons (Click to expand)</h3></strong></summary>
+            <br>
+
+            <input type="checkbox" id="paint" name="addons[]" value="paint correction">
+            <label for="paint">Paint Correction</label><br>
+
+            <input type="checkbox" id="engine" name="addons[]" value="engine wash">
+            <label for="engine">Engine Wash</label><br>
+
+            <input type="checkbox" id="tint" name="addons[]" value="window tinting">
+            <label for="tint">Window Tinting</label><br>
+
+            <input type="checkbox" id="oil" name="addons[]" value="oil changing">
+            <label for="oil">Oil Changing</label><br><br>
+        </details>
+
+        <br>
+          <!-- Submit -->
+        <input type="submit" value="Book Now">
+
+        <img src="carwash services1.JPG.jpg" alt="Car Wash Services Image" class="img-fluid my-4">
+        <img src="carwash services2.JPG.jpg" alt="Car Wash Services Image" class="img-fluid my-4">
+        </main>
+     <footer>
+        <h3>&copy; Christopher Oahile @2026</h3>
+         <a href="index.html">Home</a> |
+            <a href="services.html">Services</a> |
             <a href="bookings.html">Bookings</a> |
             <a href="pricing.html">Pricing</a> |
             <a href="about.html">About</a> |
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-     <footer>
-        <p>&copy; Christopher Oahile @2026</p>
+            <a href="contact.html">Contact</a> 
     </footer>
+    <!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </Body>
 </html>
